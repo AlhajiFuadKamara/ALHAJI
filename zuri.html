@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style type="text/css">
+      img {
+        width: 100%;
+        height: 500px;
+        /*object-fit: cover;*/
+      }
+      #slider {
+        width: 1000px;
+        height: 500px;
+        margin: 20px auto;
+        position: relative;
+        border: 10px solid white;
+        box-shadow: 0px 0px 5px 2px #ccc;
+      }
+      button {
+        padding: 20px;
+        border: none;
+        background: #37f;
+        font-size: 30px;
+        color: white;
+        position: absolute;
+        top: 45%;
+        cursor: pointer;
+      }
+
+      .next {
+        border-radius: 10px 0px 0px 10px;
+        margin-left: 950px;
+      }
+      .prew {
+        border-radius: 0px 10px 10px 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="slider">
+      <div id="box">
+        <ul class="carousel_track">
+          <li><img src="a.jpg" /></li>
+          <li><img src="b.jpg" /></li>
+          <li><img src="c.jpg" /></li>
+          <li><img src="d.jpg" /></li>
+          <li><img src="e.jpg" /></li>
+          <li><img src="f.jpg" /></li>
+          <li><img src="g.jpg" /></li>
+          <li><img src="h.jpg" /></li>
+        </ul>
+      </div>
+
+      <!-- buttons for controls slider -->
+      <button class="prew fa fa-chevron-left" onclick="prewImage()"></button>
+
+      <button class="next fa fa-chevron-right" onclick="nextImage()"></button>
+    </div>
+    <script src="zuri.js"></script>
+  </body>
+</html>
